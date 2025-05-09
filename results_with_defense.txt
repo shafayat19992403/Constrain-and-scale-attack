@@ -1,0 +1,617 @@
+
+(torch_env) shafayat@Mds-MacBook-Air-2 backdoor_federated_learning % 
+(torch_env) shafayat@Mds-MacBook-Air-2 backdoor_federated_learning % python training.py --params utils/params.yaml
+
+/Users/shafayat/miniforge3/envs/torch_env/lib/python3.10/site-packages/torchvision/io/image.py:14: UserWarning: Failed to load image Python extension: 'dlopen(/Users/shafayat/miniforge3/envs/torch_env/lib/python3.10/site-packages/torchvision/image.so, 0x0006): Library not loaded: @rpath/libjpeg.9.dylib
+  Referenced from: <0B7EB158-53DC-3403-8A49-22178CAB4612> /Users/shafayat/miniforge3/envs/torch_env/lib/python3.10/site-packages/torchvision/image.so
+  Reason: tried: '/Users/shafayat/miniforge3/envs/torch_env/lib/python3.10/site-packages/torchvision/../../../libjpeg.9.dylib' (no such file), '/Users/shafayat/miniforge3/envs/torch_env/lib/python3.10/site-packages/torchvision/../../../libjpeg.9.dylib' (no such file), '/Users/shafayat/miniforge3/envs/torch_env/lib/python3.10/lib-dynload/../../libjpeg.9.dylib' (no such file), '/Users/shafayat/miniforge3/envs/torch_env/bin/../lib/libjpeg.9.dylib' (no such file)'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+Setting up a new session...
+Start training
+current path: saved_models/model_image_May.08_14.48.07
+Loading data
+Files already downloaded and verified
+Poisoned following participants: 3, These are [0, 6, 5]
+We use following environment for graphs:  ppdl_experiment
+[0, -1, -1, 6, 2, 7, 3, 4, 5, 2]
+Prining dhukse kina
+Entered Training
+There are 5 adversaries in the training. 
+poison_now
+___Test local_Simple poisoned: True, epoch: 1: Average loss: 2.3046, Accuracy: 0.0/1000 (0%)
+___Test local_Simple poisoned: False, epoch: 1: Average loss: 2.3043, Accuracy: 1048/10000 (10.4800%)
+tensor(0.)
+/Users/shafayat/miniforge3/envs/torch_env/lib/python3.10/site-packages/torch/optim/lr_scheduler.py:224: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn(
+/Users/shafayat/miniforge3/envs/torch_env/lib/python3.10/site-packages/torch/optim/lr_scheduler.py:595: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  _warn_get_lr_called_within_step(self)
+Current lr: [0.05]
+PARAMS: 8 epoch: 1, lr: [0.05]
+___Test local_Simple poisoned: False, epoch: 1: Average loss: 1.8402, Accuracy: 3165/10000 (31.6500%)
+___Test local_Simple poisoned: True, epoch: 1: Average loss: 0.4292, Accuracy: 902.0/1000 (90%)
+Distance: 6.081744295675256
+Current lr: [0.05]
+PARAMS: 8 epoch: 2, lr: [0.05]
+___Test local_Simple poisoned: False, epoch: 1: Average loss: 1.7920, Accuracy: 3274/10000 (32.7400%)
+___Test local_Simple poisoned: True, epoch: 2: Average loss: 0.8576, Accuracy: 825.0/1000 (82%)
+Distance: 8.799066355334862
+Current lr: [0.05]
+PARAMS: 8 epoch: 3, lr: [0.05]
+___Test local_Simple poisoned: False, epoch: 1: Average loss: 1.7495, Accuracy: 3307/10000 (33.0700%)
+___Test local_Simple poisoned: True, epoch: 3: Average loss: 0.7990, Accuracy: 842.0/1000 (84%)
+Distance: 10.590841158419433
+Current lr: [0.05]
+PARAMS: 8 epoch: 4, lr: [0.05]
+___Test local_Simple poisoned: False, epoch: 1: Average loss: 1.8144, Accuracy: 3243/10000 (32.4300%)
+___Test local_Simple poisoned: True, epoch: 4: Average loss: 1.7098, Accuracy: 842.0/1000 (84%)
+Distance: 11.960761449553495
+Current lr: [0.05]
+PARAMS: 8 epoch: 5, lr: [0.05]
+___Test local_Simple poisoned: False, epoch: 1: Average loss: 1.6750, Accuracy: 3887/10000 (38.8700%)
+___Test local_Simple poisoned: True, epoch: 5: Average loss: 0.6997, Accuracy: 868.0/1000 (87%)
+Distance: 13.314561281328718
+Current lr: [0.05]
+PARAMS: 8 epoch: 6, lr: [0.05]
+___Test local_Simple poisoned: False, epoch: 1: Average loss: 1.7175, Accuracy: 3664/10000 (36.6400%)
+___Test local_Simple poisoned: True, epoch: 6: Average loss: 1.3595, Accuracy: 808.0/1000 (81%)
+Distance: 14.359390408213986
+Current lr: [0.05]
+PARAMS: 8 epoch: 7, lr: [0.05]
+___Test local_Simple poisoned: False, epoch: 1: Average loss: 1.6642, Accuracy: 3931/10000 (39.3100%)
+___Test local_Simple poisoned: True, epoch: 7: Average loss: 1.0520, Accuracy: 833.0/1000 (83%)
+Distance: 15.415217700946624
+Current lr: [0.05]
+PARAMS: 8 epoch: 8, lr: [0.05]
+___Test local_Simple poisoned: False, epoch: 1: Average loss: 1.5640, Accuracy: 4293/10000 (42.9300%)
+___Test local_Simple poisoned: True, epoch: 8: Average loss: 0.6477, Accuracy: 884.0/1000 (88%)
+Distance: 16.153481576459473
+Global model norm: 8.893127839985228.
+Norm before scaling: 16.997746935370767. Distance: 16.153481576459473
+Scaling by  20.0
+Scaled Norm after poisoning: 321.6070729554933, distance: 323.06965193283014
+Total norm for 5 adversaries is: 1613.7902589865885. distance: 1615.3481822814547
+Model 0 finished training, preparing delta.
+Model 1 finished training, preparing delta.
+Model 2 finished training, preparing delta.
+poison_now
+___Test local_Simple poisoned: True, epoch: 1: Average loss: 2.3024, Accuracy: 0.0/1000 (0%)
+___Test local_Simple poisoned: False, epoch: 1: Average loss: 2.3043, Accuracy: 1048/10000 (10.4800%)
+tensor(0.)
+Current lr: [0.05]
+PARAMS: 8 epoch: 1, lr: [0.05]
+___Test local_Simple poisoned: False, epoch: 1: Average loss: 1.8718, Accuracy: 2879/10000 (28.7900%)
+___Test local_Simple poisoned: True, epoch: 1: Average loss: 0.5584, Accuracy: 855.0/1000 (86%)
+Distance: 5.974476568685779
+Current lr: [0.05]
+PARAMS: 8 epoch: 2, lr: [0.05]
+___Test local_Simple poisoned: False, epoch: 1: Average loss: 1.8738, Accuracy: 2967/10000 (29.6700%)
+___Test local_Simple poisoned: True, epoch: 2: Average loss: 0.3937, Accuracy: 872.0/1000 (87%)
+Distance: 8.36547492102492
+Current lr: [0.05]
+PARAMS: 8 epoch: 3, lr: [0.05]
+___Test local_Simple poisoned: False, epoch: 1: Average loss: 1.7168, Accuracy: 3474/10000 (34.7400%)
+___Test local_Simple poisoned: True, epoch: 3: Average loss: 0.8721, Accuracy: 825.0/1000 (82%)
+Distance: 10.298178606189566
+Current lr: [0.05]
+PARAMS: 8 epoch: 4, lr: [0.05]
+___Test local_Simple poisoned: False, epoch: 1: Average loss: 1.7466, Accuracy: 3620/10000 (36.2000%)
+___Test local_Simple poisoned: True, epoch: 4: Average loss: 1.3953, Accuracy: 809.0/1000 (81%)
+Distance: 11.9084758930647
+Current lr: [0.05]
+PARAMS: 8 epoch: 5, lr: [0.05]
+___Test local_Simple poisoned: False, epoch: 1: Average loss: 1.8019, Accuracy: 3593/10000 (35.9300%)
+___Test local_Simple poisoned: True, epoch: 5: Average loss: 0.6598, Accuracy: 791.0/1000 (79%)
+Distance: 13.195592919052617
+Current lr: [0.05]
+PARAMS: 8 epoch: 6, lr: [0.05]
+___Test local_Simple poisoned: False, epoch: 1: Average loss: 1.6769, Accuracy: 3883/10000 (38.8300%)
+___Test local_Simple poisoned: True, epoch: 6: Average loss: 1.1090, Accuracy: 826.0/1000 (83%)
+Distance: 14.296912888440232
+Current lr: [0.05]
+PARAMS: 8 epoch: 7, lr: [0.05]
+___Test local_Simple poisoned: False, epoch: 1: Average loss: 1.7055, Accuracy: 3782/10000 (37.8200%)
+___Test local_Simple poisoned: True, epoch: 7: Average loss: 0.9427, Accuracy: 821.0/1000 (82%)
+Distance: 15.335619603970859
+Current lr: [0.05]
+PARAMS: 8 epoch: 8, lr: [0.05]
+___Test local_Simple poisoned: False, epoch: 1: Average loss: 1.6439, Accuracy: 3820/10000 (38.2000%)
+___Test local_Simple poisoned: True, epoch: 8: Average loss: 1.2311, Accuracy: 835.0/1000 (84%)
+Distance: 16.253429813823622
+Global model norm: 8.893127839985228.
+Norm before scaling: 17.170187481060466. Distance: 16.253429813823622
+Scaling by  20.0
+Scaled Norm after poisoning: 323.6970033843378, distance: 325.0685985296027
+Total norm for 5 adversaries is: 1623.8762268104056. distance: 1625.3429638079465
+Model 3 finished training, preparing delta.
+Model 4 finished training, preparing delta.
+Model 5 finished training, preparing delta.
+Model 6 finished training, preparing delta.
+Model 7 finished training, preparing delta.
+poison_now
+___Test local_Simple poisoned: True, epoch: 1: Average loss: 2.3032, Accuracy: 0.0/1000 (0%)
+___Test local_Simple poisoned: False, epoch: 1: Average loss: 2.3043, Accuracy: 1048/10000 (10.4800%)
+tensor(0.)
+Current lr: [0.05]
+PARAMS: 8 epoch: 1, lr: [0.05]
+___Test local_Simple poisoned: False, epoch: 1: Average loss: 1.9423, Accuracy: 2861/10000 (28.6100%)
+___Test local_Simple poisoned: True, epoch: 1: Average loss: 0.8519, Accuracy: 840.0/1000 (84%)
+Distance: 5.867635128251502
+Current lr: [0.05]
+PARAMS: 8 epoch: 2, lr: [0.05]
+___Test local_Simple poisoned: False, epoch: 1: Average loss: 1.7687, Accuracy: 3455/10000 (34.5500%)
+___Test local_Simple poisoned: True, epoch: 2: Average loss: 1.5204, Accuracy: 797.0/1000 (80%)
+Distance: 8.888644193884057
+Current lr: [0.05]
+PARAMS: 8 epoch: 3, lr: [0.05]
+___Test local_Simple poisoned: False, epoch: 1: Average loss: 1.8418, Accuracy: 3258/10000 (32.5800%)
+___Test local_Simple poisoned: True, epoch: 3: Average loss: 0.5046, Accuracy: 887.0/1000 (89%)
+Distance: 10.821664443406272
+Current lr: [0.05]
+PARAMS: 8 epoch: 4, lr: [0.05]
+___Test local_Simple poisoned: False, epoch: 1: Average loss: 1.7114, Accuracy: 3719/10000 (37.1900%)
+___Test local_Simple poisoned: True, epoch: 4: Average loss: 0.4680, Accuracy: 898.0/1000 (90%)
+Distance: 12.428841649016537
+Current lr: [0.05]
+PARAMS: 8 epoch: 5, lr: [0.05]
+___Test local_Simple poisoned: False, epoch: 1: Average loss: 1.7367, Accuracy: 3656/10000 (36.5600%)
+___Test local_Simple poisoned: True, epoch: 5: Average loss: 1.3429, Accuracy: 793.0/1000 (79%)
+Distance: 13.912101011904337
+Current lr: [0.05]
+PARAMS: 8 epoch: 6, lr: [0.05]
+___Test local_Simple poisoned: False, epoch: 1: Average loss: 1.6940, Accuracy: 3735/10000 (37.3500%)
+___Test local_Simple poisoned: True, epoch: 6: Average loss: 0.4971, Accuracy: 906.0/1000 (91%)
+Distance: 15.126944929185965
+Current lr: [0.05]
+PARAMS: 8 epoch: 7, lr: [0.05]
+___Test local_Simple poisoned: False, epoch: 1: Average loss: 1.6554, Accuracy: 3710/10000 (37.1000%)
+___Test local_Simple poisoned: True, epoch: 7: Average loss: 1.0656, Accuracy: 884.0/1000 (88%)
+Distance: 16.170030276730795
+Current lr: [0.05]
+PARAMS: 8 epoch: 8, lr: [0.05]
+___Test local_Simple poisoned: False, epoch: 1: Average loss: 1.6493, Accuracy: 3875/10000 (38.7500%)
+___Test local_Simple poisoned: True, epoch: 8: Average loss: 1.3459, Accuracy: 826.0/1000 (83%)
+Distance: 17.089672767001804
+Global model norm: 8.893127839985228.
+Norm before scaling: 17.83806587717069. Distance: 17.089672767001804
+Scaling by  20.0
+Scaled Norm after poisoning: 340.3570161426087, distance: 341.7934546257432
+Total norm for 5 adversaries is: 1707.440482125219. distance: 1708.967231985447
+Model 8 finished training, preparing delta.
+Model 9 finished training, preparing delta.
+Finding out the outliers
+[array([ 14.426202 ,  33.077545 ,  15.480053 , ..., -30.290005 ,
+        13.470859 ,   6.5981016], shape=(62006,), dtype=float32), array([-0.01044566, -0.01075916, -0.01085241, ...,  0.00674332,
+       -0.01780029, -0.10674439], shape=(62006,), dtype=float32), array([ 0.00075676, -0.00276647,  0.00236103, ...,  0.00392714,
+       -0.01660642, -0.10207561], shape=(62006,), dtype=float32), array([-24.714828, -21.016027, -43.28488 , ..., -26.682032,  14.199042,
+         7.573138], shape=(62006,), dtype=float32), array([-0.00991071, -0.0082254 , -0.00322491, ..., -0.02328146,
+        0.0508329 , -0.09841538], shape=(62006,), dtype=float32), array([-0.00194465, -0.00241089, -0.00326619, ..., -0.05825701,
+        0.05987347, -0.09252647], shape=(62006,), dtype=float32), array([-0.00962697, -0.00940995, -0.00513151, ..., -0.01826908,
+        0.05655234, -0.08136505], shape=(62006,), dtype=float32), array([ 0.00051303,  0.00210362,  0.00473793, ...,  0.01793146,
+       -0.00616437, -0.06964241], shape=(62006,), dtype=float32), array([  9.067904 ,   0.6903417,   7.607875 , ..., -16.263472 ,
+         3.1115265,   4.0658765], shape=(62006,), dtype=float32), array([-0.00546288, -0.00254802,  0.00030306, ..., -0.02216262,
+        0.0543263 , -0.07856528], shape=(62006,), dtype=float32)]
+Counter({np.int64(0): 7, np.int64(-1): 3}) 1
+Selected clients this round: [0, 9, 9, 6, 2, 7, 3, 4, 5, 2]
+Malicious clients: [0, 6, 5]
+Outliers detected (as returned): [0, 6, 5] 
+Client 0 Scale: 0.01
+Client 9 Scale: 1.0
+Client 9 Scale: 1.0
+Client 6 Scale: 0.01
+Client 2 Scale: 1.0
+Client 7 Scale: 1.0
+Client 3 Scale: 1.0
+Client 4 Scale: 1.0
+Client 5 Scale: 0.01
+Client 2 Scale: 1.0
+time spent on training: 145.91717004776
+___Test local_Simple poisoned: True, epoch: 1: Average loss: 2.0491, Accuracy: 286.0/1000 (29%)
+___Test local_Simple poisoned: False, epoch: 1: Average loss: 2.0621, Accuracy: 2306/10000 (23.0600%)
+Done in 147.10954403877258 sec.
+[0, -1, -1, 4, 5, 1, 1, 2, 6, 4]
+Prining dhukse kina
+Entered Training
+There are 5 adversaries in the training. 
+poison_now
+___Test local_Simple poisoned: True, epoch: 2: Average loss: 2.0607, Accuracy: 281.0/1000 (28%)
+___Test local_Simple poisoned: False, epoch: 2: Average loss: 2.0621, Accuracy: 2306/10000 (23.0600%)
+tensor(28.1000)
+/Users/shafayat/miniforge3/envs/torch_env/lib/python3.10/site-packages/torch/optim/lr_scheduler.py:224: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn(
+/Users/shafayat/miniforge3/envs/torch_env/lib/python3.10/site-packages/torch/optim/lr_scheduler.py:595: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  _warn_get_lr_called_within_step(self)
+Current lr: [0.001]
+PARAMS: 8 epoch: 1, lr: [0.001]
+___Test local_Simple poisoned: False, epoch: 2: Average loss: 1.8659, Accuracy: 3128/10000 (31.2800%)
+___Test local_Simple poisoned: True, epoch: 1: Average loss: 0.8885, Accuracy: 808.0/1000 (81%)
+Distance: 0.6559316680489014
+Current lr: [0.001]
+PARAMS: 8 epoch: 2, lr: [0.001]
+___Test local_Simple poisoned: False, epoch: 2: Average loss: 1.7849, Accuracy: 3337/10000 (33.3700%)
+___Test local_Simple poisoned: True, epoch: 2: Average loss: 1.0514, Accuracy: 801.0/1000 (80%)
+Distance: 0.9325720970877437
+Current lr: [0.001]
+PARAMS: 8 epoch: 3, lr: [0.001]
+___Test local_Simple poisoned: False, epoch: 2: Average loss: 1.7315, Accuracy: 3577/10000 (35.7700%)
+___Test local_Simple poisoned: True, epoch: 3: Average loss: 1.2337, Accuracy: 774.0/1000 (77%)
+Distance: 1.142983128423984
+Current lr: [0.001]
+PARAMS: 8 epoch: 4, lr: [0.001]
+___Test local_Simple poisoned: False, epoch: 2: Average loss: 1.6926, Accuracy: 3739/10000 (37.3900%)
+___Test local_Simple poisoned: True, epoch: 4: Average loss: 1.0558, Accuracy: 810.0/1000 (81%)
+Distance: 1.329053800847268
+Current lr: [0.001]
+PARAMS: 8 epoch: 5, lr: [0.001]
+___Test local_Simple poisoned: False, epoch: 2: Average loss: 1.6495, Accuracy: 3878/10000 (38.7800%)
+___Test local_Simple poisoned: True, epoch: 5: Average loss: 1.1989, Accuracy: 800.0/1000 (80%)
+Distance: 1.507086069900662
+Current lr: [0.001]
+PARAMS: 8 epoch: 6, lr: [0.001]
+___Test local_Simple poisoned: False, epoch: 2: Average loss: 1.6099, Accuracy: 4054/10000 (40.5400%)
+___Test local_Simple poisoned: True, epoch: 6: Average loss: 1.3371, Accuracy: 785.0/1000 (78%)
+Distance: 1.666165451342927
+Current lr: [0.001]
+PARAMS: 8 epoch: 7, lr: [0.001]
+___Test local_Simple poisoned: False, epoch: 2: Average loss: 1.5806, Accuracy: 4148/10000 (41.4800%)
+___Test local_Simple poisoned: True, epoch: 7: Average loss: 1.2490, Accuracy: 804.0/1000 (80%)
+Distance: 1.809374251554924
+Current lr: [0.001]
+PARAMS: 8 epoch: 8, lr: [0.001]
+___Test local_Simple poisoned: False, epoch: 2: Average loss: 1.5554, Accuracy: 4235/10000 (42.3500%)
+___Test local_Simple poisoned: True, epoch: 8: Average loss: 1.4735, Accuracy: 787.0/1000 (79%)
+Distance: 1.9470648781655342
+Global model norm: 9.389331087412083.
+Norm before scaling: 9.810416030694748. Distance: 1.9470648781655342
+Scaling by  20.0
+Scaled Norm after poisoning: 41.1151723511034, distance: 38.9413010408976
+Total norm for 5 adversaries is: 196.0309784989352. distance: 194.70649987545357
+Model 0 finished training, preparing delta.
+Model 1 finished training, preparing delta.
+Model 2 finished training, preparing delta.
+Model 3 finished training, preparing delta.
+poison_now
+___Test local_Simple poisoned: True, epoch: 2: Average loss: 2.0669, Accuracy: 253.0/1000 (25%)
+___Test local_Simple poisoned: False, epoch: 2: Average loss: 2.0621, Accuracy: 2306/10000 (23.0600%)
+tensor(25.3000)
+Current lr: [0.001]
+PARAMS: 8 epoch: 1, lr: [0.001]
+___Test local_Simple poisoned: False, epoch: 2: Average loss: 1.8650, Accuracy: 3119/10000 (31.1900%)
+___Test local_Simple poisoned: True, epoch: 1: Average loss: 0.9191, Accuracy: 799.0/1000 (80%)
+Distance: 0.6538233623588712
+Current lr: [0.001]
+PARAMS: 8 epoch: 2, lr: [0.001]
+___Test local_Simple poisoned: False, epoch: 2: Average loss: 1.7899, Accuracy: 3384/10000 (33.8400%)
+___Test local_Simple poisoned: True, epoch: 2: Average loss: 1.1709, Accuracy: 773.0/1000 (77%)
+Distance: 0.921171566537141
+Current lr: [0.001]
+PARAMS: 8 epoch: 3, lr: [0.001]
+___Test local_Simple poisoned: False, epoch: 2: Average loss: 1.7339, Accuracy: 3528/10000 (35.2800%)
+___Test local_Simple poisoned: True, epoch: 3: Average loss: 0.9566, Accuracy: 806.0/1000 (81%)
+Distance: 1.1425999826802193
+Current lr: [0.001]
+PARAMS: 8 epoch: 4, lr: [0.001]
+___Test local_Simple poisoned: False, epoch: 2: Average loss: 1.6910, Accuracy: 3721/10000 (37.2100%)
+___Test local_Simple poisoned: True, epoch: 4: Average loss: 1.0589, Accuracy: 804.0/1000 (80%)
+Distance: 1.3281863030141994
+Current lr: [0.001]
+PARAMS: 8 epoch: 5, lr: [0.001]
+___Test local_Simple poisoned: False, epoch: 2: Average loss: 1.6509, Accuracy: 3867/10000 (38.6700%)
+___Test local_Simple poisoned: True, epoch: 5: Average loss: 1.3021, Accuracy: 806.0/1000 (81%)
+Distance: 1.5035174771438968
+Current lr: [0.001]
+PARAMS: 8 epoch: 6, lr: [0.001]
+___Test local_Simple poisoned: False, epoch: 2: Average loss: 1.6235, Accuracy: 4003/10000 (40.0300%)
+___Test local_Simple poisoned: True, epoch: 6: Average loss: 1.2539, Accuracy: 802.0/1000 (80%)
+Distance: 1.6523999504469802
+Current lr: [0.001]
+PARAMS: 8 epoch: 7, lr: [0.001]
+___Test local_Simple poisoned: False, epoch: 2: Average loss: 1.5885, Accuracy: 4153/10000 (41.5300%)
+___Test local_Simple poisoned: True, epoch: 7: Average loss: 1.3753, Accuracy: 787.0/1000 (79%)
+Distance: 1.797526697483148
+Current lr: [0.001]
+PARAMS: 8 epoch: 8, lr: [0.001]
+___Test local_Simple poisoned: False, epoch: 2: Average loss: 1.5567, Accuracy: 4221/10000 (42.2100%)
+___Test local_Simple poisoned: True, epoch: 8: Average loss: 1.3045, Accuracy: 805.0/1000 (80%)
+Distance: 1.9450981297781746
+Global model norm: 9.389331087412083.
+Norm before scaling: 9.81073954152094. Distance: 1.9450981297781746
+Scaling by  20.0
+Scaled Norm after poisoning: 41.081325355552366, distance: 38.9019607324377
+Total norm for 5 adversaries is: 195.83917987726562. distance: 194.50979048302426
+Model 4 finished training, preparing delta.
+Model 5 finished training, preparing delta.
+Model 6 finished training, preparing delta.
+Model 7 finished training, preparing delta.
+poison_now
+___Test local_Simple poisoned: True, epoch: 2: Average loss: 2.0445, Accuracy: 294.0/1000 (29%)
+___Test local_Simple poisoned: False, epoch: 2: Average loss: 2.0621, Accuracy: 2306/10000 (23.0600%)
+tensor(29.4000)
+Current lr: [0.001]
+PARAMS: 8 epoch: 1, lr: [0.001]
+___Test local_Simple poisoned: False, epoch: 2: Average loss: 1.8658, Accuracy: 3119/10000 (31.1900%)
+___Test local_Simple poisoned: True, epoch: 1: Average loss: 0.9051, Accuracy: 816.0/1000 (82%)
+Distance: 0.6584455683159088
+Current lr: [0.001]
+PARAMS: 8 epoch: 2, lr: [0.001]
+___Test local_Simple poisoned: False, epoch: 2: Average loss: 1.7964, Accuracy: 3348/10000 (33.4800%)
+___Test local_Simple poisoned: True, epoch: 2: Average loss: 1.1673, Accuracy: 785.0/1000 (78%)
+Distance: 0.9308286443288848
+Current lr: [0.001]
+PARAMS: 8 epoch: 3, lr: [0.001]
+___Test local_Simple poisoned: False, epoch: 2: Average loss: 1.7325, Accuracy: 3567/10000 (35.6700%)
+___Test local_Simple poisoned: True, epoch: 3: Average loss: 1.1505, Accuracy: 773.0/1000 (77%)
+Distance: 1.1350178791099959
+Current lr: [0.001]
+PARAMS: 8 epoch: 4, lr: [0.001]
+___Test local_Simple poisoned: False, epoch: 2: Average loss: 1.6887, Accuracy: 3672/10000 (36.7200%)
+___Test local_Simple poisoned: True, epoch: 4: Average loss: 1.0018, Accuracy: 820.0/1000 (82%)
+Distance: 1.3328902978764214
+Current lr: [0.001]
+PARAMS: 8 epoch: 5, lr: [0.001]
+___Test local_Simple poisoned: False, epoch: 2: Average loss: 1.6495, Accuracy: 3932/10000 (39.3200%)
+___Test local_Simple poisoned: True, epoch: 5: Average loss: 1.3516, Accuracy: 779.0/1000 (78%)
+Distance: 1.507864284120279
+Current lr: [0.001]
+PARAMS: 8 epoch: 6, lr: [0.001]
+___Test local_Simple poisoned: False, epoch: 2: Average loss: 1.6139, Accuracy: 3956/10000 (39.5600%)
+___Test local_Simple poisoned: True, epoch: 6: Average loss: 1.0218, Accuracy: 843.0/1000 (84%)
+Distance: 1.6660994120700807
+Current lr: [0.001]
+PARAMS: 8 epoch: 7, lr: [0.001]
+___Test local_Simple poisoned: False, epoch: 2: Average loss: 1.5818, Accuracy: 4106/10000 (41.0600%)
+___Test local_Simple poisoned: True, epoch: 7: Average loss: 1.0667, Accuracy: 826.0/1000 (83%)
+Distance: 1.8107462982009281
+Current lr: [0.001]
+PARAMS: 8 epoch: 8, lr: [0.001]
+___Test local_Simple poisoned: False, epoch: 2: Average loss: 1.5551, Accuracy: 4232/10000 (42.3200%)
+___Test local_Simple poisoned: True, epoch: 8: Average loss: 1.4002, Accuracy: 787.0/1000 (79%)
+Distance: 1.9453243883374813
+Global model norm: 9.389331087412083.
+Norm before scaling: 9.811169576656702. Distance: 1.9453243883374813
+Scaling by  20.0
+Scaled Norm after poisoning: 41.0874519888676, distance: 38.906488453084535
+Total norm for 5 adversaries is: 195.8636024922701. distance: 194.53244226542265
+Model 8 finished training, preparing delta.
+Model 9 finished training, preparing delta.
+Finding out the outliers
+[array([ 4.1443496,  3.2866   ,  5.4352217, ..., -0.8304522,  5.2275286,
+       -5.7443385], shape=(62006,), dtype=float32), array([ 0.04265822,  0.05109526,  0.0697572 , ...,  0.04020758,
+       -0.01867598, -0.03942139], shape=(62006,), dtype=float32), array([ 0.05464501,  0.06655943,  0.09900108, ...,  0.05781136,
+       -0.0149361 , -0.03356734], shape=(62006,), dtype=float32), array([ 0.04346722,  0.04183963,  0.0715166 , ...,  0.03666678,
+        0.01980846, -0.04740204], shape=(62006,), dtype=float32), array([ 3.655318 ,  2.9826097,  5.349629 , ..., -1.0733976,  4.774322 ,
+       -5.3792086], shape=(62006,), dtype=float32), array([ 0.06051557,  0.05911508,  0.07067873, ...,  0.02572292,
+        0.01913778, -0.03503623], shape=(62006,), dtype=float32), array([ 0.04998158,  0.03715559,  0.05826616, ...,  0.01966307,
+        0.0126318 , -0.04049571], shape=(62006,), dtype=float32), array([ 0.04774099,  0.04956411,  0.07356758, ...,  0.04161562,
+        0.03862731, -0.02331929], shape=(62006,), dtype=float32), array([ 3.9229586,  3.1208582,  5.5306845, ..., -1.3473854,  5.1264753,
+       -5.3767943], shape=(62006,), dtype=float32), array([ 0.04593297,  0.05121215,  0.06851064, ...,  0.0419412 ,
+        0.02716857, -0.05395576], shape=(62006,), dtype=float32)]
+Counter({np.int64(1): 7, np.int64(0): 3}) 1
+Selected clients this round: [0, 9, 9, 4, 5, 1, 1, 2, 6, 4]
+Malicious clients: [0, 6, 5]
+Outliers detected (as returned): [0, 5, 6]
+Client 0 Scale: 0.01
+Client 9 Scale: 1.0
+Client 9 Scale: 1.0
+Client 4 Scale: 1.0
+Client 5 Scale: 0.01
+Client 1 Scale: 1.0
+Client 1 Scale: 1.0
+Client 2 Scale: 1.0
+Client 6 Scale: 0.01
+Client 4 Scale: 1.0
+time spent on training: 141.09162497520447
+___Test local_Simple poisoned: True, epoch: 2: Average loss: 5.3336, Accuracy: 157.0/1000 (16%)
+___Test local_Simple poisoned: False, epoch: 2: Average loss: 1.7391, Accuracy: 3852/10000 (38.5200%)
+Done in 142.3614730834961 sec.
+Selected models: [8, 2, 4, 9, 3, 3, 2, 2, 2, 7]
+Prining dhukse kina
+Entered Training
+There are 0 adversaries in the training. 
+Model 0 finished training, preparing delta.
+Model 1 finished training, preparing delta.
+Model 2 finished training, preparing delta.
+Model 3 finished training, preparing delta.
+Model 4 finished training, preparing delta.
+Model 5 finished training, preparing delta.
+Model 6 finished training, preparing delta.
+Model 7 finished training, preparing delta.
+Model 8 finished training, preparing delta.
+Model 9 finished training, preparing delta.
+Finding out the outliers
+[array([-0.04550592, -0.03722789, -0.01518259, ..., -0.03659798,
+        0.03930168, -0.03415719], shape=(62006,), dtype=float32), array([-0.03402168, -0.01645417,  0.00854971, ..., -0.0398206 ,
+        0.07410879, -0.02745409], shape=(62006,), dtype=float32), array([-0.03466096, -0.01735362,  0.00497069, ..., -0.048612  ,
+        0.05915992, -0.02727297], shape=(62006,), dtype=float32), array([-0.04666753, -0.02979762, -0.00528526, ..., -0.03931476,
+        0.04118031, -0.00925289], shape=(62006,), dtype=float32), array([-0.030526  , -0.00923549,  0.01388874, ..., -0.03550372,
+        0.06507322, -0.01715529], shape=(62006,), dtype=float32), array([-0.03562418, -0.02952579, -0.00779322, ..., -0.03351636,
+        0.06835842, -0.0032164 ], shape=(62006,), dtype=float32), array([-0.0423262 , -0.02949382, -0.01171165, ..., -0.04451603,
+        0.05513494, -0.00176948], shape=(62006,), dtype=float32), array([-0.05051729, -0.03153066, -0.00237834, ..., -0.04518339,
+        0.07539089, -0.03082864], shape=(62006,), dtype=float32), array([-0.04883737, -0.02820884, -0.00414877, ..., -0.02813582,
+        0.04727525, -0.02097727], shape=(62006,), dtype=float32), array([-0.00786417,  0.00803628,  0.02994516, ..., -0.05433151,
+        0.03182054, -0.02984178], shape=(62006,), dtype=float32)]
+Counter({np.int64(0): 10}) 1
+Selected clients this round: [8, 2, 4, 9, 3, 3, 2, 2, 2, 7]
+Malicious clients: [0, 6, 5]
+Outliers detected (as returned): []
+time spent on training: 27.009505033493042
+___Test local_Simple poisoned: True, epoch: 3: Average loss: 3.1865, Accuracy: 334.0/1000 (33%)
+___Test local_Simple poisoned: False, epoch: 3: Average loss: 1.4596, Accuracy: 4720/10000 (47.2000%)
+Done in 28.36177396774292 sec.
+Selected models: [6, 7, 8, 8, 5, 4, 7, 9, 4, 6]
+Prining dhukse kina
+Entered Training
+There are 3 adversaries in the training. 
+Model 0 finished training, preparing delta.
+Model 1 finished training, preparing delta.
+Model 2 finished training, preparing delta.
+Model 3 finished training, preparing delta.
+Model 4 finished training, preparing delta.
+Model 5 finished training, preparing delta.
+Model 6 finished training, preparing delta.
+Model 7 finished training, preparing delta.
+Model 8 finished training, preparing delta.
+Model 9 finished training, preparing delta.
+Finding out the outliers
+[array([-2.4012990e-02, -1.7598271e-05,  5.8872057e-03, ...,
+       -4.4326842e-02,  4.9903214e-02, -2.9348165e-02],
+      shape=(62006,), dtype=float32), array([ 0.01080093,  0.01509856,  0.01726306, ..., -0.0515485 ,
+        0.03969714, -0.02568933], shape=(62006,), dtype=float32), array([-0.02227852,  0.00323405,  0.01204047, ..., -0.02848956,
+        0.03530532, -0.01823264], shape=(62006,), dtype=float32), array([-0.0297124 , -0.0219127 , -0.01541875, ..., -0.03361066,
+        0.04013875, -0.022094  ], shape=(62006,), dtype=float32), array([-0.02288126, -0.00164058, -0.00251266, ..., -0.05728586,
+        0.02262582, -0.01664932], shape=(62006,), dtype=float32), array([-0.03419979, -0.01396171,  0.01367898, ..., -0.02374357,
+        0.06352341, -0.03434071], shape=(62006,), dtype=float32), array([-0.00110207,  0.01694965,  0.01988429, ..., -0.04919522,
+        0.02416094, -0.00942151], shape=(62006,), dtype=float32), array([-0.03350423,  0.00172893,  0.01027748, ..., -0.02829231,
+        0.03048573, -0.01745851], shape=(62006,), dtype=float32), array([-0.03258163, -0.01590179,  0.0002871 , ..., -0.0379941 ,
+        0.0535351 , -0.02715376], shape=(62006,), dtype=float32), array([-0.01767189, -0.00659388,  0.00077621, ..., -0.02841632,
+        0.065786  , -0.02770288], shape=(62006,), dtype=float32)]
+Counter({np.int64(0): 10}) 1
+Selected clients this round: [6, 7, 8, 8, 5, 4, 7, 9, 4, 6]
+Malicious clients: [0, 6, 5]
+Outliers detected (as returned): []
+time spent on training: 27.4344379901886
+___Test local_Simple poisoned: True, epoch: 4: Average loss: 3.8376, Accuracy: 139.0/1000 (14%)
+___Test local_Simple poisoned: False, epoch: 4: Average loss: 1.3888, Accuracy: 4981/10000 (49.8100%)
+Done in 28.815627813339233 sec.
+Selected models: [2, 6, 6, 1, 6, 2, 7, 3, 4, 5]
+Prining dhukse kina
+Entered Training
+There are 4 adversaries in the training. 
+Model 0 finished training, preparing delta.
+Model 1 finished training, preparing delta.
+Model 2 finished training, preparing delta.
+Model 3 finished training, preparing delta.
+Model 4 finished training, preparing delta.
+Model 5 finished training, preparing delta.
+Model 6 finished training, preparing delta.
+Model 7 finished training, preparing delta.
+Model 8 finished training, preparing delta.
+Model 9 finished training, preparing delta.
+Finding out the outliers
+[array([-0.01135676,  0.00656911,  0.00105301, ..., -0.03235836,
+        0.0405179 , -0.02192214], shape=(62006,), dtype=float32), array([-0.0104716 ,  0.01050738,  0.00375552, ..., -0.01760484,
+        0.04672626, -0.01522943], shape=(62006,), dtype=float32), array([-0.01662677,  0.00816865,  0.00440732, ..., -0.01693524,
+        0.04226097, -0.00809065], shape=(62006,), dtype=float32), array([-0.03716261, -0.01192699, -0.02687782, ..., -0.01335262,
+        0.01923716, -0.01605192], shape=(62006,), dtype=float32), array([-0.02355839, -0.00850348, -0.00290846, ..., -0.0209782 ,
+        0.05235028, -0.0280634 ], shape=(62006,), dtype=float32), array([-0.02223719, -0.01209985, -0.00967449, ..., -0.00956014,
+        0.03710538, -0.01173352], shape=(62006,), dtype=float32), array([-0.0103793 ,  0.02036387,  0.02140005, ..., -0.01363595,
+        0.02094439, -0.00537059], shape=(62006,), dtype=float32), array([-0.02003691,  0.00439217, -0.0002246 , ..., -0.03242411,
+        0.06021979,  0.00513779], shape=(62006,), dtype=float32), array([-0.03359184, -0.01218957, -0.00406161, ..., -0.02110209,
+        0.04532403, -0.01893303], shape=(62006,), dtype=float32), array([-0.03949063, -0.01476042, -0.00284289, ..., -0.03743459,
+        0.02611449, -0.01803981], shape=(62006,), dtype=float32)]
+Counter({np.int64(0): 10}) 1
+Selected clients this round: [2, 6, 6, 1, 6, 2, 7, 3, 4, 5]
+Malicious clients: [0, 6, 5]
+Outliers detected (as returned): []
+time spent on training: 27.362881183624268
+___Test local_Simple poisoned: True, epoch: 5: Average loss: 4.3777, Accuracy: 70.0/1000 (7%)
+___Test local_Simple poisoned: False, epoch: 5: Average loss: 1.3445, Accuracy: 5188/10000 (51.8800%)
+Done in 28.705256938934326 sec.
+Selected models: [4, 4, 4, 6, 5, 8, 6, 4, 4, 3]
+Prining dhukse kina
+Entered Training
+There are 3 adversaries in the training. 
+Model 0 finished training, preparing delta.
+Model 1 finished training, preparing delta.
+Model 2 finished training, preparing delta.
+Model 3 finished training, preparing delta.
+Model 4 finished training, preparing delta.
+Model 5 finished training, preparing delta.
+Model 6 finished training, preparing delta.
+Model 7 finished training, preparing delta.
+Model 8 finished training, preparing delta.
+Model 9 finished training, preparing delta.
+Finding out the outliers
+[array([-2.3993097e-02, -9.4670802e-05, -3.0437149e-03, ...,
+       -1.1335939e-02,  3.4727812e-02, -8.2261413e-03],
+      shape=(62006,), dtype=float32), array([-0.02302351, -0.00945416, -0.00178049, ..., -0.00852096,
+        0.02781236, -0.02512971], shape=(62006,), dtype=float32), array([-0.00755307,  0.01333535,  0.02028234, ...,  0.00330049,
+        0.03753752, -0.00526878], shape=(62006,), dtype=float32), array([ 0.0213737 ,  0.03652887,  0.021898  , ..., -0.00463936,
+        0.02910736,  0.00247778], shape=(62006,), dtype=float32), array([-0.00485931,  0.01025264,  0.01780532, ..., -0.01832861,
+        0.02151033, -0.01118532], shape=(62006,), dtype=float32), array([-0.00520404,  0.00358923, -0.00058459, ..., -0.00623357,
+        0.02726904, -0.0105014 ], shape=(62006,), dtype=float32), array([-0.00533883,  0.00660145, -0.00050757, ..., -0.0256997 ,
+        0.0285539 ,  0.00331518], shape=(62006,), dtype=float32), array([-0.02590279,  0.01476188,  0.01715275, ..., -0.02306715,
+        0.04173356, -0.01286398], shape=(62006,), dtype=float32), array([-0.02701291, -0.00769405,  0.00186604, ..., -0.01320195,
+        0.03875914, -0.01503433], shape=(62006,), dtype=float32), array([ 0.00842987,  0.02032765,  0.01460486, ..., -0.01089689,
+        0.03875694,  0.0009065 ], shape=(62006,), dtype=float32)]
+Counter({np.int64(0): 10}) 1
+Selected clients this round: [4, 4, 4, 6, 5, 8, 6, 4, 4, 3]
+Malicious clients: [0, 6, 5]
+Outliers detected (as returned): []
+time spent on training: 27.800431966781616
+___Test local_Simple poisoned: True, epoch: 6: Average loss: 4.6424, Accuracy: 27.0/1000 (3%)
+___Test local_Simple poisoned: False, epoch: 6: Average loss: 1.3187, Accuracy: 5236/10000 (52.3600%)
+Done in 29.108437061309814 sec.
+Selected models: [2, 2, 8, 5, 4, 9, 2, 9, 8, 8]
+Prining dhukse kina
+Entered Training
+There are 1 adversaries in the training. 
+Model 0 finished training, preparing delta.
+Model 1 finished training, preparing delta.
+Model 2 finished training, preparing delta.
+Model 3 finished training, preparing delta.
+Model 4 finished training, preparing delta.
+Model 5 finished training, preparing delta.
+Model 6 finished training, preparing delta.
+Model 7 finished training, preparing delta.
+Model 8 finished training, preparing delta.
+Model 9 finished training, preparing delta.
+Finding out the outliers
+[array([-0.00038389,  0.0067799 ,  0.00189091, ..., -0.01622725,
+        0.03126314,  0.0027902 ], shape=(62006,), dtype=float32), array([-0.03482538, -0.01856996, -0.01588636, ..., -0.00403103,
+        0.01338243, -0.00218625], shape=(62006,), dtype=float32), array([-0.01577626,  0.0020346 ,  0.00895895, ..., -0.03104138,
+        0.01654974, -0.00379562], shape=(62006,), dtype=float32), array([ 0.01320483,  0.02026024,  0.01149528, ..., -0.02296624,
+        0.00047722, -0.00105904], shape=(62006,), dtype=float32), array([-0.00639877,  0.00522793, -0.00521543, ..., -0.02378857,
+        0.02737221, -0.01619303], shape=(62006,), dtype=float32), array([-0.03952821, -0.01508948, -0.00723411, ...,  0.0048826 ,
+        0.00167239,  0.00113252], shape=(62006,), dtype=float32), array([-0.03372922, -0.01797624, -0.02794091, ..., -0.01168621,
+        0.03894797, -0.01073977], shape=(62006,), dtype=float32), array([-0.03095693, -0.00573846,  0.00867683, ..., -0.00955197,
+        0.01359689, -0.01313967], shape=(62006,), dtype=float32), array([-6.1179399e-03,  5.8040023e-05, -1.2186460e-02, ...,
+       -2.1476239e-02,  3.1908929e-02, -5.7207048e-03],
+      shape=(62006,), dtype=float32), array([-0.00309038,  0.01092208, -0.00282601, ..., -0.01338634,
+        0.016422  , -0.00384386], shape=(62006,), dtype=float32)]
+Counter({np.int64(0): 10}) 1
+Selected clients this round: [2, 2, 8, 5, 4, 9, 2, 9, 8, 8]
+Malicious clients: [0, 6, 5]
+Outliers detected (as returned): []
+time spent on training: 27.522605180740356
+___Test local_Simple poisoned: True, epoch: 7: Average loss: 4.8766, Accuracy: 24.0/1000 (2%)
+___Test local_Simple poisoned: False, epoch: 7: Average loss: 1.2801, Accuracy: 5404/10000 (54.0400%)
+Done in 28.87555193901062 sec.
+Selected models: [4, 1, 1, 1, 9, 2, 2, 1, 6, 9]
+Prining dhukse kina
+Entered Training
+There are 1 adversaries in the training. 
+Model 0 finished training, preparing delta.
+Model 1 finished training, preparing delta.
+Model 2 finished training, preparing delta.
+Model 3 finished training, preparing delta.
+Model 4 finished training, preparing delta.
+Model 5 finished training, preparing delta.
+Model 6 finished training, preparing delta.
+Model 7 finished training, preparing delta.
+Model 8 finished training, preparing delta.
+Model 9 finished training, preparing delta.
+Finding out the outliers
+[array([-0.02410322, -0.00320389,  0.00062415, ..., -0.02141044,
+        0.02871856, -0.00770603], shape=(62006,), dtype=float32), array([ 0.0142565 ,  0.0126438 ,  0.00698158, ..., -0.01768342,
+        0.02504677, -0.00737044], shape=(62006,), dtype=float32), array([ 0.00920436,  0.01336037,  0.01768561, ..., -0.02501437,
+        0.00146019,  0.00151661], shape=(62006,), dtype=float32), array([ 0.01425658,  0.01514134,  0.00646051, ..., -0.01921999,
+       -0.00136006,  0.00656015], shape=(62006,), dtype=float32), array([ 0.00696278,  0.01471744,  0.00738493, ..., -0.01437503,
+        0.00761646,  0.00479288], shape=(62006,), dtype=float32), array([-1.1831373e-02, -5.3491443e-05, -5.9374277e-03, ...,
+       -5.5474043e-03,  2.6604056e-02,  5.5880994e-03],
+      shape=(62006,), dtype=float32), array([-0.01393395, -0.00432695, -0.00823114, ..., -0.02105093,
+        0.01549777, -0.00945599], shape=(62006,), dtype=float32), array([ 0.00974157,  0.01770239, -0.00466817, ..., -0.01607755,
+        0.01428145, -0.00849168], shape=(62006,), dtype=float32), array([-0.00473966,  0.01996799, -0.00122884, ..., -0.00308567,
+        0.02575701,  0.00143968], shape=(62006,), dtype=float32), array([-0.02373061,  0.00904615, -0.00378328, ..., -0.01103017,
+        0.00486296, -0.00585556], shape=(62006,), dtype=float32)]
+Counter({np.int64(0): 10}) 1
+Selected clients this round: [4, 1, 1, 1, 9, 2, 2, 1, 6, 9]
+Malicious clients: [0, 6, 5]
+Outliers detected (as returned): []
+time spent on training: 27.745760917663574
+___Test local_Simple poisoned: True, epoch: 8: Average loss: 5.1202, Accuracy: 6.0/1000 (1%)
+___Test local_Simple poisoned: False, epoch: 8: Average loss: 1.2449, Accuracy: 5563/10000 (55.6300%)
+Done in 29.139150857925415 sec.
+Selected models: [4, 6, 8, 4, 2, 4, 2, 4, 8, 6]
+Prining dhukse kina
+Entered Training
+There are 2 adversaries in the training. 
